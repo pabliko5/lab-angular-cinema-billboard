@@ -1,0 +1,15 @@
+<p>
+  my-home works!
+</p>
+
+
+
+<button (click)="showMovies()" type= "button" name = "button">click-me-to-show-movies</button>
+
+      <div>
+        <div *ngFor = "let movie of movies" class = "movies">
+          <div>ROOM :<span>{{movie.room}}</span></div>
+          <img [src] = "movie.poster" height="400px" width="250px">
+          <article><b>{{movie.title}}</b></article>
+        </div>
+      </div>
